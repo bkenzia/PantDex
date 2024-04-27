@@ -1,3 +1,14 @@
+
+CREATE TABLE IF NOT EXISTS public.plant (
+	arrosage int8 NULL,
+	id bigserial NOT NULL,
+	categorie varchar(255) NULL,
+	image varchar(255) NULL,
+	nom varchar(255) NULL,
+	soleil varchar(255) NULL,
+	CONSTRAINT plant_pkey PRIMARY KEY (id)
+);
+
 INSERT INTO public.plant
 ( nom, soleil, arrosage, categorie, image)
 VALUES( 'Anthurium, pot D12cm', 'moyen', 2, 'plantes fleuries','https://images.truffaut.com/media/catalog/product/cdn:///Articles/jpg/0952000/952438_003.jpg'),
